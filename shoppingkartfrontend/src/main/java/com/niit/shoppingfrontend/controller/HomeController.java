@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController {
@@ -28,10 +29,11 @@ public class HomeController {
 	}
 	
 	@RequestMapping("/login")
-	public String login( Model model)
+	public ModelAndView login()
 	{
-	model.addAttribute("userClickedLogin","true");	
-	return "index";
+		ModelAndView mv=new ModelAndView("index");
+			mv.addObject("userClickedLogin","true");	
+	return mv;
 	}
 	
 	@RequestMapping("/register")
