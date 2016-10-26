@@ -13,5 +13,6 @@ ${ErrorMessage}
 <jsp:include page="register.jsp"></jsp:include>
 </c:if>
 <c:out value="${SuccessMessage}"/>
+${registerMessage}
 </body>
 </html>

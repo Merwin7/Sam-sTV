@@ -8,6 +8,12 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController {
+	@RequestMapping("/registerhere")
+	public String register1(Model m)
+	{
+		m.addAttribute("registerMessage","successfuly registered");
+		return "index";
+	}
 	@RequestMapping("/")
 	public String gotohome()
 	{
