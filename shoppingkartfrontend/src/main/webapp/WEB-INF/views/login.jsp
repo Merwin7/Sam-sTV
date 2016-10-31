@@ -8,8 +8,18 @@
 </head>
 <body>
 <form action="validate" method="POST">
-User id:<input type="text" name="userID"> <br>
-Password:<input type="password" name="password"><br>
+<table style="margin:40px;">
+<tr>
+	<td><label for="userid">User Id</label></td>
+	<td>:</td>
+	<td><input type="text" placeholder="userid" name="userID"></td>
+</tr>
+<tr>
+	<td><label for="password">Password</label></td>
+	<td>:</td>
+	<td><input type="password" name="password"></td>
+</tr>
+</table>	
 <input type="submit" value="login">
 </form>
 </body>

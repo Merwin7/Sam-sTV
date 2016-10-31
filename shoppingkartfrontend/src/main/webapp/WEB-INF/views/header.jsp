@@ -16,6 +16,7 @@
       width: 70%;
       margin: auto;
   }
+  
   </style>
 </head>
 <body>
@@ -28,6 +29,8 @@
     <ul class="nav navbar-nav">
       <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
       <li><a href="#">Contact Us</a></li>
+      <li><a href="#">About Us</a></li>
+      
     </ul>
     <ul class="nav navbar-nav navbar-right">
     <c:if test="${empty SuccessMessage}">
