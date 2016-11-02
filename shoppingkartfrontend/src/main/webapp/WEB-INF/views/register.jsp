@@ -14,33 +14,33 @@
 <tr>
 	<td><label for="firstname">Firstname</label></td>
 	<td>:</td>
-	<td><input type="text" id="firstname" name="firstname" placeholder="firstname" required>
+	<td><input type="text" id="firstname" name="firstname"  required>
 	</td>
 </tr>
 <tr>
 	<td><label for="middlename">Middlename</label></td>
 	<td>:</td>
-	<td><input type="text" id="Middlename" placeholder="middlename"></td>
+	<td><input type="text" id="Middlename"></td>
 </tr>
 <tr>
 	<td><label for="lastname">Lastname</label></td>
 	<td>:</td>
-	<td><input type="text" id="lastname" placeholder="lastname"></td>
+	<td><input type="text" id="lastname"></td>
 </tr>
 <tr>
 	<td><label for="phonenumber">Phone no</label></td>
 	<td>:</td>
-	<td><input type="number" id="phonenumber" placeholder="phonenumber" ></td>
+	<td><input type="number" id="phonenumber"></td>
 </tr>
 <tr>
 	<td><label for="emailid">Emailid</label></td>
 	<td>:</td>
-	<td><input type="email" id="emailid"  placeholder="emailid" ></td>
+	<td><input type="email" id="emailid"></td>
 </tr>
 <tr>
 	<td><label for="password">Password</label></td>
 	<td>:</td>
-	<td><input type="password" id="password" ></td>
+	<td><input type="password" id="password"></td>
 </tr>
 <tr>
 	<td><label for="confirm_password">Confirm password</label></td>

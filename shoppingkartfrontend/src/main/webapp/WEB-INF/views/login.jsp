@@ -12,7 +12,7 @@
 <tr>
 	<td><label for="userid">User Id</label></td>
 	<td>:</td>
-	<td><input type="text" placeholder="userid" name="userID"></td>
+	<td><input type="text" name="userID"></td>
 </tr>
 <tr>
 	<td><label for="password">Password</label></td>

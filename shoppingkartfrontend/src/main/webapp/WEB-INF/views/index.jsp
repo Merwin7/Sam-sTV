@@ -2,6 +2,7 @@
 <html>
 <body>
 <jsp:include page="header.jsp"></jsp:include>
+<jsp:include page="home.jsp"></jsp:include>
 ${ErrorMessage}
 <c:if test="${not empty ErrorMessage}">
 <jsp:include page="login.jsp"></jsp:include><br>

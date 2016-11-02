@@ -27,7 +27,15 @@
       <a class="navbar-brand" href="#">SAM'S TELEVISION</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      <li><a href="home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      <li class="dropdown">
+        <a data-target="#" href="page.html" data-toggle="dropdown" class="dropdown-toggle">Category <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Supplier</a></li>
+            <li><a href="#">category</a></li>
+        </ul>
+    </li>
       <li><a href="#">Contact Us</a></li>
       <li><a href="#">About Us</a></li>
       

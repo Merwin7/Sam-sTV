@@ -48,5 +48,10 @@ public class HomeController {
 		model.addAttribute("userClickedRegister","true");
 		return "index";
 	}
-
+	
+	@RequestMapping("/home")
+	public String register()
+	{
+		return "index";
+	}
 }
