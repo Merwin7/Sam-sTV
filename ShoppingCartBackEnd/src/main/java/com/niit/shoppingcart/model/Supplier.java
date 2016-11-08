@@ -1,43 +1,40 @@
 package com.niit.shoppingcart.model;
 
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.springframework.context.annotation.EnableLoadTimeWeaving;
 import org.springframework.stereotype.Component;
+
 @Entity
 @Table
 @Component
-public class Cataegory {
+public class Supplier {
 	@Id
 private String id;
-	@Column
+	@Column(name="name")
 private String name;
-	@Column
-private String description;
-@Id
+	@Column(name="address")
+private String adddress;
 public String getId() {
 	return id;
 }
-
 public void setId(String id) {
 	this.id = id;
 }
-
 public String getName() {
 	return name;
 }
 public void setName(String name) {
 	this.name = name;
 }
-public String getDescription() {
-	return description;
+public String getAdddress() {
+	return adddress;
 }
-public void setDescription(String description) {
-	this.description = description;
+public void setAdddress(String adddress) {
+	this.adddress = adddress;
 }
+
 
 }

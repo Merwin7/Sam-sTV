@@ -106,7 +106,11 @@
     <artifactId>spring-security-taglibs</artifactId>
     <version>4.1.3.RELEASE</version>
 </dependency>
-    
+    <dependency>
+        	<groupId>com.h2database</groupId>
+        	<artifactId>h2</artifactId>
+       		<version>1.4.192</version>
+        </dependency>
   </dependencies>
   <build>
     <finalName>shoppingkartfrontend</finalName>

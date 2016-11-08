@@ -30,22 +30,22 @@
     <div class="carousel-inner" role="listbox">
       <div class="item active">
       <div class="carousel-caption">
-        <h3>Sony</h3>
-        <p>New sony Ultra Model</p>
+        
       </div>
-        <img src="C:\Users\minni_000\Desktop\sam tv\sony-led-tv-250x250.jpg" alt="sony-led-tv-250x250.jpg" width="460" height="345">
+        <img src="C:\Users\minni_000\Desktop\tv picx\sam's club_1478047477605_49011716_ver1.0_640_480.jpg" alt="sam's club_1478047477605_49011716_ver1.0_640_480.jpg" width="460" height="345">
       </div>
+      
 
       <div class="item">
-        <img src="C:\Users\minni_000\Desktop\sam tv\696201_1_original.jpg" alt="696201_1_original.jpg" height="345">
+        <img src="C:\Users\minni_000\Desktop\tv picx\uptron-32-inch-lcd-tv-32t51.jpg" alt="uptron-32-inch-lcd-tv-32t51.jpg" height="345">
       </div>
     
       <div class="item">
-        <img src="C:\Users\minni_000\Desktop\sam tv\maxresdefault.jpg" alt="maxresdefault.jpg" height="345">
+        <img src="C:\Users\minni_000\Desktop\tv picx\-Viera-TH-42AS670D-42-SDL049976963-1-5e151.jpg" alt="-Viera-TH-42AS670D-42-SDL049976963-1-5e151.jpg" height="345">
       </div>
-
+      
       <div class="item">
-        <img src="C:\Users\minni_000\Desktop\sam tv\samsung-le32s62bx.jpg" alt="samsung-le32s62bx.jpg" width="460" height="345">
+        <img src="C:\Users\minni_000\Desktop\tv picx\Lcd-Para-Tv.jpg" alt="Lcd-Para-Tv.jpg" width="460" height="345">
       </div>
     </div>
 

@@ -31,13 +31,13 @@
       <li class="dropdown">
         <a data-target="#" href="page.html" data-toggle="dropdown" class="dropdown-toggle">Category <b class="caret"></b></a>
         <ul class="dropdown-menu">
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Supplier</a></li>
-            <li><a href="#">category</a></li>
+            <li><a href="#">Plasma</a></li>
+            <li><a href="#">Flat</a></li>
+            <li><a href="#">LCD</a></li>
         </ul>
     </li>
-      <li><a href="#">Contact Us</a></li>
       <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
       
     </ul>
     <ul class="nav navbar-nav navbar-right">

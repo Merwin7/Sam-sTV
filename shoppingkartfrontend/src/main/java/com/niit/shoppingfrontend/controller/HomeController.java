@@ -50,8 +50,21 @@ public class HomeController {
 	}
 	
 	@RequestMapping("/home")
-	public String register()
+	public String home(Model model)
 	{
+		model.addAttribute("home","true");
 		return "index";
+	}
+	@RequestMapping("/aboutus")
+	public String aboutus( Model model)
+	{
+		model.addAttribute("aboutus","true");
+		return "aboutus";
+	}
+	@RequestMapping("/contactus")
+	public String contact( Model model)
+	{
+		model.addAttribute("contactus","true");
+		return "contactus";
 	}
 }
