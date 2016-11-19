@@ -69,8 +69,8 @@
         <div class="row">
         	<div class="col-md-3 footer-brand animated fadeInLeft">
             	<h2>SAM'S TV</h2>
-                <p>Through innovative, reliable products and services; talented people; a responsible approach to business and global citizenship; and collaboration with our partners and customers, Sam's Tv is taking the world in imaginative new directions</p>
-                <p>© 2014, All rights reserved</p>
+                <p>Through innovative,reliable products and services,talented people,a responsible approach to business and global citizenship and collaboration with our partners and customers,Sam's Tv is taking the world in imaginative new directions</p>
+                <p>© 2017, All rights reserved</p>
             </div>
         	<div class="col-md-4 footer-nav animated fadeInUp">
             	<h4>Menu </h4>
@@ -84,7 +84,7 @@
                 </div>
             	<div class="col-md-6">
                     <ul class="list">
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="aboutus">About Us</a></li>
                         <li><a href="contactus">Contactus</a></li>
                         <li><a href="#">Terms & Condition</a></li>
                         <li><a href="#">Privacy Policy</a></li>

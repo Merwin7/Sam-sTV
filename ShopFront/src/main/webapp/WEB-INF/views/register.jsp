@@ -2,93 +2,62 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-<h1>Registration form</h1>
-<form action="registerhere">
-<table style="text-align:left;">
-<tr>
-	<td><label for="firstname">Firstname</label></td>
-	<td>:</td>
-	<td><input type="text" id="firstname" name="firstname"  required>
-	</td>
-</tr>
-<tr>
-	<td><label for="middlename">Middlename</label></td>
-	<td>:</td>
-	<td><input type="text" id="Middlename"></td>
-</tr>
-<tr>
-	<td><label for="lastname">Lastname</label></td>
-	<td>:</td>
-	<td><input type="text" id="lastname"></td>
-</tr>
-<tr>
-	<td><label for="phonenumber">Phone no</label></td>
-	<td>:</td>
-	<td><input type="number" id="phonenumber"></td>
-</tr>
-<tr>
-	<td><label for="emailid">Emailid</label></td>
-	<td>:</td>
-	<td><input type="email" id="emailid"></td>
-</tr>
-<tr>
-	<td><label for="password">Password</label></td>
-	<td>:</td>
-	<td><input type="password" id="password"></td>
-</tr>
-<tr>
-	<td><label for="confirm_password">Confirm password</label></td>
-	<td>:</td>
-	<td><input type="password" id="confirm_password" ></td>
-</tr>
-<tr>
-	<td><label for="address1">Address1</label></td>
-	<td>:</td>
-	<td><input type="text" id="address1" name=""></td>
-</tr>
-<tr>
-	<td><label for="address2">Address2<label></td>
-	<td>:</td>
-	<td><input type="text" id="address2" name=""></td>
-</tr>
-<tr>
-	<td><label for="district">District</label></td>
-	<td>:</td>
-	<td><select>
-			<option value="district" selected="selected">choose the district</option>
-			<option value="chennai">Chennai</option>
-			<option value="banglore">Bangalore</option>
-			<option value="mumbai"  >Mumbai</option>
-			<option value="kolkata">Kolkata</option>
-			<option value="delhi">Delhi</option>
-			<option value="pune">Pune</option></td>
-</tr>
-<tr>
-	<td><label for="state">State</label></td>
-	<td>:</td>
-	<td><select>
-			<option value="state" selected="selected">choose the state</option>
-			<option value="tamilnadu">Tamilnadu</option>
-			<option value="karnataka">Karnataka</option>
-			<option value="maharastra">Maharastra</option>
-			<option value="westbengal">Westbengal</option>
-			<option value="newdelhi">NewDelhi</option></td>
-</tr>
-<tr>
-	<td><label for="pincode">Pincode</label></td>
-	<td>:</td>
-	<td><input type="text" id="pincode" name=""></td>
-</tr>
-</table>
-	<br><br>
-<input type="submit" value="submit"></a>	
+<html>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
+            <legend><a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> Sign up!</legend>
+            <form action="#" method="post" class="form" role="form">
+            <div class="row">
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control" name="firstname" placeholder="First Name" type="text"
+                        required autofocus />
+                </div>
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
+                </div>
+            </div>
+            <input class="form-control" name="youremail" placeholder="Your Email" type="email" />
+            <input class="form-control" name="reenteremail" placeholder="Re-enter Email" type="email" />
+            <input class="form-control" name="password" placeholder="New Password" type="password" />
+            <label for="">
+                Birth Date</label>
+            <div class="row">
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Month">Month</option>
+                    </select>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Day">Day</option>
+                    </select>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Year">Year</option>
+                    </select>
+                </div>
+            </div>
+            <label class="radio-inline">
+                <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
+                Male
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
+                Female
+            </label>
+            <br />
+<br />            
+           <<button class="btn btn-lg btn-primary btn-block" type="submit">
+                Sign up</button>
+            </form>
+        </div>
+    </div>
+</div>
 
-</form>
-
-</body>
 </html>
+<style>
+body { padding-top:1px; }
+.form-control { margin-bottom: 10px; }    
+</style>

@@ -2,7 +2,6 @@
 <html>
 <body>
 <jsp:include page="header.jsp"></jsp:include>
-
 <c:if test="${userClickedAboutus}">
 <jsp:include page="aboutus.jsp"></jsp:include><br>
 </c:if>
@@ -24,7 +23,8 @@ ${ErrorMessage}
 </c:if>
 <c:out value="${SuccessMessage}"/>
 ${registerMessage}
-<jsp:include page="home.jsp"></jsp:include>
+<c:if test="${home }">
+<jsp:include page="home.jsp"></jsp:include></c:if>
 <jsp:include page="footer.jsp"></jsp:include>
 
 </body>

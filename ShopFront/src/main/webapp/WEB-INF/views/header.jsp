@@ -15,14 +15,15 @@
   .carousel-inner > .item > a > img {
       width: 70%;
       margin: auto;
-  }
+      .search-form .form-group {
+  
   
   </style>
 </head>
 <style>
 body  {
     background-image: url("");
-    background-color: #cccccc;
+    background-color:#d3caad;
 }
 </style>
 <body>
@@ -32,24 +33,21 @@ body  {
     <div class="navbar-header">
       <a class="navbar-brand" href="#">SAM'S TELEVISION</a>
     </div>
-    <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav">
       <li><a href="home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      <li><a href="aboutus">About Us</a></li>
+      <li><a href="contactus">Contact Us</a></li>
       <li class="dropdown">
         <a data-target="#" href="page.html" data-toggle="dropdown" class="dropdown-toggle">Category <b class="caret"></b></a>
         <ul class="dropdown-menu">
             <li><a href="#">4K ULTRA</a></li>
             <li><a href="#">3D</a></li>
             <li><a href="#">LED</a></li>
-        </ul>
-        
-    </li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="contactus">Contact Us</a></li>
-      <li><a href="#">Search<input type="text"></a></li>
-   
-      
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
+                 </ul>
+              </li>
+        </ul>     
+                   
+        <ul class="nav navbar-nav navbar-right">
     <c:if test="${empty SuccessMessage}">
       <li><a href="register">Signup <span class="glyphicon glyphicon-user"></span></a></li>
       <li><a href="login">Login <span class="glyphicon glyphicon-log-in"></span></a></li>
@@ -58,8 +56,9 @@ body  {
        <li><a href="#">My Cart<span class="glyphicon glyphicon-shopping-cart"></span></a></li>
        <li><a href="login">Log out<span class="glyphicon glyphicon-log-out"></span></a></li>
        </c:if>
-  </div>
-</nav>
+       </ul>
+         </div>
+         </nav>
  
 
 </body>

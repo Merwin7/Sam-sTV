@@ -34,7 +34,7 @@ public class ApplicationContextConfig {
 	}
 
 	
-	private Properties getHibernateProperties() {
+	public Properties getHibernateProperties() {
 		Properties properties = new Properties();
 		
 		properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
