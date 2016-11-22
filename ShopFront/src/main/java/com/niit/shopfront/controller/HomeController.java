@@ -14,8 +14,9 @@ public class HomeController {
 		return "index";
 	}
 	@RequestMapping("/")
-	public String gotohome()
+	public String gotohome(Model model)
 	{
+		model.addAttribute("home","true");
 		return "index";
 	}
 	
@@ -34,18 +35,17 @@ public class HomeController {
 	}
 	
 	@RequestMapping("/login")
-	public ModelAndView login()
+	public String login( Model model)
 	{
-		ModelAndView mv=new ModelAndView("index");
-			mv.addObject("userClickedLogin","true");	
-	return mv;
+		model.addAttribute("userClickedLogin","true");
+		return "login";
 	}
 	
 	@RequestMapping("/register")
 	public String register( Model model)
 	{
 		model.addAttribute("userClickedRegister","true");
-		return "index";
+		return "register";
 	}
 	
 	@RequestMapping("/home")
@@ -55,7 +55,7 @@ public class HomeController {
 		return "index";
 	}
 	@RequestMapping("/aboutus")
-	public String aboutus( Model model)
+	public String about( Model model)
 	{
 		model.addAttribute("aboutus","true");
 		return "aboutus";
@@ -66,6 +66,11 @@ public class HomeController {
 		model.addAttribute("contactus","true");
 		return "contactus";
 	}
-	
+	@RequestMapping("/terms")
+	public String terms( Model model)
+	{
+		model.addAttribute("terms","true");
+		return "terms";
+	}
 	
 }
