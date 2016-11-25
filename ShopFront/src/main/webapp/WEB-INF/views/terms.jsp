@@ -15,8 +15,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<jsp:include page="footer.jsp"></jsp:include>
+
 Sams India has developed a CSR Policy (hereinafter referred to as Policy) in alignment with its objective, principles and values, for delineating its responsibility as a socially and environmentally responsible corporate citizen. The Policy lays down the principles and mechanisms for undertaking various programs in accordance with Section 135 of the Companies Act 2013.
 The Policy shall apply to all the CSR programs and activities undertaken by Sams at various locations for the benefit of diverse sectors of the society.
+<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

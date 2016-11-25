@@ -4,6 +4,7 @@ package com.niit.ShoppingCartBackEnd;
 
 import org.junit.AfterClass;
 import org.junit.Assert;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -22,46 +23,45 @@ public class CategoryTestCase {
 	@Autowired
 	static CategoryDAO categoryDAO;
 
-	@AfterClass
+	@BeforeClass
 	public static void init()
 	{
 		context=new  AnnotationConfigApplicationContext();
-		context.scan("com.niit.ShoppingCartBackEnd");
+		context.scan("com.niit");
 		context.refresh();
 		categoryDAO=(CategoryDAO) context.getBean("categoryDAO");
 		category=(Category) context.getBean("category");
 		System.out.println("The objects are created");
 	}
-		@Test
+		/*@Test
 	public void saveCategoryTestCase()
 	{
-		category.setId("mob007");
-		category.setDescription("this is mobile");
-		category.setName("mob cat");
+		category.setId("134");
+		category.setDescription("abc");
+		category.setName("mob");
 		Boolean status=categoryDAO.save(category);
 		Assert.assertEquals("save category test case",true,status);
-		}
-		@Test
+		}*/
+		/*@Test
 		public void deleteCategoryTestCase()
 		{
-			category.setId("mob007");
+			category.setId("134");
 			Boolean status=categoryDAO.delete(category);
 			Assert.assertEquals("delete category test case",true,status);
-			}
+			}*/
 		@Test
 		public void updateCategoryTestCase()
 		{
-			category.setId("mob007");
-			category.setId("mob007");
-			category.setDescription("This is a mobile category");
-			category.setName("mobile category");
+			category.setId("134");
+						category.setDescription("cate");
+			category.setName("aks");
 			Boolean status=categoryDAO.update(category);
 			Assert.assertEquals("update category test case",true,status);
 			}
 
 
 
-	@Test
+	/*@Test
 		public void getCategoryTestCase()
 		{
 					Assert.assertEquals("get category test case",null,categoryDAO.get("abcd"));
@@ -71,6 +71,6 @@ public class CategoryTestCase {
 		
 			{
 				Assert.assertEquals("getall category test case",12,categoryDAO.list().size());
-			}
+			}*/
 	
 }

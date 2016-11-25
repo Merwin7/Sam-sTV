@@ -86,7 +86,7 @@
                     <ul class="list">
                         <li><a href="aboutus">About Us</a></li>
                         <li><a href="contactus">Contactus</a></li>
-                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="terms">Terms & Condition</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
