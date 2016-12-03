@@ -37,12 +37,12 @@ body  {
       <li><a href="home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
       <li><a href="aboutus">About Us</a></li>
       <li><a href="contactus">Contact Us</a></li>
-      <li class="dropdown">
-        <a data-target="#" href="page.html" data-toggle="dropdown" class="dropdown-toggle">Category <b class="caret"></b></a>
+     
+        <li class="dropdown"><a data-target="#" href="page.html" data-toggle="dropdown" class="dropdown-toggle">Products <b class="caret"></b></a>
         <ul class="dropdown-menu">
-            <li><a href="#">4K ULTRA</a></li>
-            <li><a href="#">3D</a></li>
-            <li><a href="#">LED</a></li>
+            <li><a href="4k">4K ULTRA</a></li>
+            <li><a href="3d">3D</a></li>
+            <li><a href="led">LED</a></li>
                  </ul>
               </li>
         </ul>     

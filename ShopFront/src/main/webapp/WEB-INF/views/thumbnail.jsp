@@ -65,7 +65,7 @@ $(document).ready( function() {
                        Sam TVs support HDMI inputs, which lets you create a multimedia entertainment centre in your own living room. Connect HDMI straight into your TV to view various contents from multiple devices
                     </div>
                     <div>
-                        <a href="#" class="btn btn-warning btn-sm">ORDER NOW</a>
+                        <a href="4k" class="btn btn-warning btn-sm">4k</a>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@ $(document).ready( function() {
                         Sam TVs support HDMI inputs, which lets you create a multimedia entertainment centre in your own living room. Connect HDMI straight into your TV to view various contents from multiple devices.
                     </div>
                     <div>
-                        <a href="#" class="btn btn-primary btn-sm">ORDER NOW</a>
+                        <a href="3d" class="btn btn-primary btn-sm">3d</a>
                     </div>
                 </div>
             </div>
@@ -91,7 +91,7 @@ $(document).ready( function() {
             <div class="post">
                 <div class="post-img-content">
                     <img src="C:\Users\minni_000\Desktop\tv picx\RESIZ\new-samsung-oled-tv-wallpaper-1167239762.jpg" class="img-responsive" />
-                    <span class="post-title"><b>COMING SOON</b><br />
+                    <span class="post-title"><b>NEW ARRIVAL</b><br />
                         <b>Plug your entertainment into the TV</b></span>
                 </div>
                 
@@ -99,7 +99,7 @@ $(document).ready( function() {
                         Sam TVs support HDMI inputs, which lets you create a multimedia entertainment centre in your own living room. Connect HDMI straight into your TV to view various contents from multiple devices.
                     </div>
                     <div>
-                        <a href="#" class="btn btn-success btn-sm">PREORDER NOW</a>
+                        <a href="led" class="btn btn-success btn-sm">led</a>
                     </div>
                 </div>
             </div>

@@ -1,198 +1,159 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html lang="en">
 <head>
-    <style>
+<title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+
+		<!-- Website CSS style -->
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+		<!-- Website Font style -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		
+		<!-- Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+<style>
+/*
+/* Created by Filipe Pina
+ * Specific styles of signin, register, component
+ */
+/*
+ * General styles
+ */
+
+body, html{
+     height: 100%;
+ 	background-repeat: no-repeat;
+ 	background-color: #d3d3d3;
+ 	font-family: 'Oxygen', sans-serif;
+}
+
+.main{
+ 	margin-top: 70px;
+}
+
+h1.title { 
+	font-size: 50px;
+	font-family: 'Passion One', cursive; 
+	font-weight: 400; 
+}
+
+hr{
+	width: 10%;
+	color: #fff;
+}
+
+.form-group{
+	margin-bottom: 15px;
+}
+
+label{
+	margin-bottom: 15px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+
+.main-login{
+ 	background-color: #fff;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+.main-center{
+ 	margin-top: 30px;
+ 	margin: 0 auto;
+ 	max-width: 330px;
+    padding: 40px 40px;
+
+}
+
+.login-button{
+	margin-top: 5px;
+}
+
+.login-register{
+	font-size: 11px;
+	text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
     
+		
 
-/* brandico */
-[class*="brandico-"]:before {
-  font-family: 'brandico', sans-serif;
-}
+		<title>Admin</title>
+	</head>
+	<body>
+	<jsp:include page="header.jsp"></jsp:include>
+		<div class="container">
+			<div class="row main">
+				<div class="panel-heading">
+	               <div class="panel-title text-center">
+	               		<h1 class="title">LOGIN</h1>
+	               		<hr />
+	               	</div>
+	            </div> 
+				<div class="main-login main-center">
+					<form class="form-horizontal" method="post" action="validate">
+						<div class="form-group">
+							<label for="userid" class="cols-sm-2 control-label">userid</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="userid" id="userid"  placeholder="Enter your Username"/>
+								</div>
+							</div>
+						</div>
 
-/* entypo */
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
-}
+						<div class="form-group">
+							<label for="password" class="cols-sm-2 control-label">Password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+								</div>
+							</div>
+						</div>
 
-/* openwebicons */
-[class*="openwebicons-"]:before {
-  font-family: 'OpenWeb Icons', sans-serif;
-}
+						<div class="form-group ">
+							<button type="submit" value="login" class="btn btn-primary btn-lg btn-block login-button">login</button>
+						</div>
+						<div class="login-register">
+				            <a href="register">Create account</a>
+				         </div>
+					</form>
+				</div>
+			</div>
+		</div>
 
-/* zocial */
-[class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif;
-}
-
-.form-signin{
-  max-width: 330px;
-  padding: 15px;
-  margin: 0 auto;
-}
-
-
-.login-input {
-  margin-bottom: -1px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.login-input-pass {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-
-.signup-input {
-  margin-bottom: -1px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.signup-input-confirm {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
+		<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	</body>
+</html>
 
 
-.create-account {
-  text-align: center;
-  width: 100%;
-  display: block;
-}
-
-.form-signin .form-control {
-  position: relative;
-  font-size: 16px;
-  height: auto;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.btn-center{
-  width: 50%;
-  text-align: center;
-  margin: inherit;
-}
-
-.social-login-btn {
-  margin: 5px;
-  width: 20%;
-  font-size: 250%;
-  padding: 0;
-}
-
-.social-login-more {
-  width: 45%;
-}
-
-.social-google {
-  background-color: #da573b;
-  border-color: #be5238;
-}
-.social-google:hover{
-  background-color: #be5238;
-  border-color: #9b4631;
-}
-
-.social-twitter {
-  background-color: #1daee3;
-  border-color: #3997ba;
-}
-.social-twitter:hover {
-  background-color: #3997ba;
-  border-color: #347b95;
-}
-
-.social-facebook {
-  background-color: #4c699e;
-  border-color: #47618d;
-}
-.social-facebook:hover {
-  background-color: #47618d;
-  border-color: #3c5173;
-}
-
-.social-linkedin {
-  background-color: #4875B4;
-  border-color: #466b99;
-}
-.social-linkedin:hover {
-  background-color: #466b99;
-  border-color: #3b5a7c;
-}
-    </style></head>
-    <body>
-    <jsp:include page="header.jsp"></jsp:include>
-<div class="container">
-      
-      <script id="metamorph-1-start" type="text/x-placeholder"></script><script id="metamorph-21-start" type="text/x-placeholder"></script>
-
-	<div class="container text-center">
-	    <form class="form-signin" data-ember-action="2">
-	    	<h2 class="form-signin-heading">Sign in</h2>
-
-			<small class="text-muted">Connect [your service] with your favorite social network</small>
-			<br><br>
-
-			
-<p>
-<a class="btn btn-primary social-login-btn social-facebook" href="/auth/facebook"><i class="fa fa-facebook"></i></a>
-<a class="btn btn-primary social-login-btn social-twitter" href="/auth/twitter"><i class="fa fa-twitter"></i></a>
-</p>
-<p>
-<a class="btn btn-primary social-login-btn social-linkedin" href="/auth/linkedin"><i class="fa fa-linkedin"></i></a>
-<a class="btn btn-primary social-login-btn social-google" href="/auth/google"><i class="fa fa-google-plus"></i></a>
-</p>
-
-<div class="btn-group social-login-more">
-  <button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown">
-    More...
-  </button>
-  <ul class="dropdown-menu text-left " role="menu">
-    <li><a href="#"><i class="fa fa-tumblr-sign"></i>   Tumblr</a></li>
-    <li><a href="#"><i class="fa fa-github-alt"></i>   Github</a></li>
-    <li><a href="#"><i class="fa fa-dropbox"></i>   Dropbox</a></li>
-    <li><a href="/auth/amazon"><span class="zocial-amazon"></span>   Amazon</a></li>
-    <li><a href="#"><span class="zocial-bitbucket"></span>   Bitbucket</a></li>
-    <li><a href="#"><span class="zocial-evernote"></span>   Evernote</a></li>
-    <li><a href="#"><span class="zocial-meetup"></span>   Meetup</a></li>
-    <li><a href="#"><i class="fa fa-windows"></i>   Windows Live</a></li>
-    <li><a href="#"><i class="fa fa-weibo"></i>   Weibo</a></li>
-    <li><a href="#"><i class="fa fa-foursquare"></i>   Foursquare</a></li>
-    <li><a href="#"><i class="fa fa-stackexchange"></i>   Stack Exchange</a></li>
-    <li><a href="#"><i class="fa fa-trello"></i>   Trello</a></li>
-    <li><a href="#"><span class="zocial-wordpress"></span>   Wordpress</a></li>
-  </ul>
-</div>
-<br><br>
-
-
-		    <small class="text-muted">Or sign in with [your service]</small>
-		    <br><br>
-	    	
-	        <input id="ember360" class="ember-view ember-text-field form-control login-input" placeholder="Email Address" type="text">
-	        <input id="ember361" class="ember-view ember-text-field form-control login-input-pass" placeholder="Password" type="password">
-
-	        <script id="metamorph-22-start" type="text/x-placeholder"></script><script id="metamorph-22-end" type="text/x-placeholder"></script>
-	        
-	        
-	        
-
-	        <button class="btn btn-lg btn-primary btn-block btn-center" type="submit" data-bindattr-3="3">Sign in</button>
-	        <br>
-	        <small class="create-account text-muted">Dont have a [your service] or social network account?<a href="register"> <button id="ember363" class="ember-view btn btn-sm btn-default"> Sign Up </button></a> </small>
-	    </form>
-    </div>
-    </div>
-    </body>
-    </html>
    
 
 

@@ -76,9 +76,9 @@
             	<h4>Menu </h4>
             	<div class="col-md-6">
                     <ul class="pages">
-                        <li><a href="#">4K ULTRA</a></li>
-                        <li><a href="#">3D</a></li>
-                        <li><a href="#">LED</a></li>
+                        <li><a href="4k">4K ULTRA</a></li>
+                        <li><a href="3d">3D</a></li>
+                        <li><a href="led">LED</a></li>
                         
                     </ul>
                 </div>

@@ -21,9 +21,9 @@ public class HomeController {
 	}
 	
 	@RequestMapping("/validate")
-	public String validate(@RequestParam("userID")String userID,@RequestParam("password") String pwd,Model model)
+	public String validate(@RequestParam("userid")String id,@RequestParam("password") String pwd,Model model)
 	{
-		if(userID.equals("niit") && pwd.equals("niit"))
+		if(id.equals("niit") && pwd.equals("niit"))
 		{
 			model.addAttribute("SuccessMessage","Login Successful");
 		}
@@ -39,6 +39,25 @@ public class HomeController {
 	{
 		model.addAttribute("userClickedLogin","true");
 		return "login";
+	}
+	@RequestMapping("/4k")
+	public String moreinfo( Model model)
+	{
+		model.addAttribute("userClicked4k","true");
+		return "4k";
+	}
+
+	@RequestMapping("/3d")
+	public String moreinfo1( Model model)
+	{
+		model.addAttribute("userClicked3d","true");
+		return "3d";
+	}
+	@RequestMapping("/led")
+	public String moreinfos( Model model)
+	{
+		model.addAttribute("userClickedled","true");
+		return "led";
 	}
 	
 	@RequestMapping("/register")
