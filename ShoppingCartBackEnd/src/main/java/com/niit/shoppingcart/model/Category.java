@@ -2,8 +2,10 @@ package com.niit.shoppingcart.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Size;
 
 import org.springframework.stereotype.Component;
 
@@ -12,17 +14,22 @@ import org.springframework.stereotype.Component;
 @Component
 public class Category {
 	@Id
-
-	private String id;
-	@Column(name="name")
+	@GeneratedValue
+	private int id;
+	
+	@Column
+	@Size(min=2,max=10,message="Name has to be between 2 to 10 characters")
 	private String name;
-	@Column(name="description")
+	
+	@Column
+	@Size(min=2,max=10,message="Name has to be between 2 to 10 characters")
 	private String description;
-	public String getId() {
+	
+	
+	public int getId() {
 		return id;
 	}
-
-	public  void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getName() {
@@ -37,5 +44,5 @@ public class Category {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
+	
 }

@@ -46,7 +46,7 @@
       </div>
       
       <div class="item">
-        <img src="C:\Users\minni_000\Desktop\tv picx\RESIZ\hd-tv-1191350.jpg" alt="hd-tv-1191350.jpg" style=width:640px; height:360px/>
+        <img src="C:\Users\minni_000\Desktop\tv picx\RESIZ\546ff8b484141478ab7db5767dd284eb.jpg" alt="546ff8b484141478ab7db5767dd284eb.jpg" style=width:640px; height:360px/>
       </div>
      </div> 
        

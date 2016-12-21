@@ -2,6 +2,8 @@
 <html>
 <body>
 <jsp:include page="header.jsp"></jsp:include>
+<c:if test="${empty successadmin}"> 
+</c:if>
 <c:if test="${userClickedAboutus}">
 <jsp:include page="aboutus.jsp"></jsp:include><br>
 </c:if>
@@ -11,6 +13,9 @@
 ${ErrorMessage}
 <c:if test="${not empty ErrorMessage}">
 <jsp:include page="login.jsp"></jsp:include><br>
+</c:if>
+<c:if test="${userClickeAdmin}">
+<jsp:include page="admin.jsp"></jsp:include><br>
 </c:if>
 <c:if test="${userClickedLogin}">
 <jsp:include page="login.jsp"></jsp:include><br>

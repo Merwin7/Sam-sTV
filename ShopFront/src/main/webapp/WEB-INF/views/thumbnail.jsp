@@ -65,7 +65,7 @@ $(document).ready( function() {
                        Sam TVs support HDMI inputs, which lets you create a multimedia entertainment centre in your own living room. Connect HDMI straight into your TV to view various contents from multiple devices
                     </div>
                     <div>
-                        <a href="4k" class="btn btn-warning btn-sm">4k</a>
+                        <a href="4k" class="btn btn-warning btn-sm">4K</a>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@ $(document).ready( function() {
                         Sam TVs support HDMI inputs, which lets you create a multimedia entertainment centre in your own living room. Connect HDMI straight into your TV to view various contents from multiple devices.
                     </div>
                     <div>
-                        <a href="3d" class="btn btn-primary btn-sm">3d</a>
+                        <a href="3d" class="btn btn-primary btn-sm">3D</a>
                     </div>
                 </div>
             </div>
@@ -99,7 +99,7 @@ $(document).ready( function() {
                         Sam TVs support HDMI inputs, which lets you create a multimedia entertainment centre in your own living room. Connect HDMI straight into your TV to view various contents from multiple devices.
                     </div>
                     <div>
-                        <a href="led" class="btn btn-success btn-sm">led</a>
+                        <a href="led" class="btn btn-success btn-sm">LED</a>
                     </div>
                 </div>
             </div>

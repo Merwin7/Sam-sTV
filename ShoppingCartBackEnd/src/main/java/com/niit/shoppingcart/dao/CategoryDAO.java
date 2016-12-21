@@ -5,13 +5,14 @@ import java.util.List;
 import com.niit.shoppingcart.model.Category;
 
 public interface CategoryDAO {
-	public boolean save(Category category);
 	
-	public boolean update(Category category);
-	
-	public boolean delete(Category category);
-	
-	public Category get(String id); //it is used to get all the fields in a category using primary key
-	
-	public List<Category> list();
+	public void addCategory(Category p);
+
+	public void updateCategory(Category p);
+
+	public List<Category> listCategory();
+
+	public Category getCategoryById(int id);
+
+	public void removeCategory(int id);
 }

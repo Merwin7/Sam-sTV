@@ -49,7 +49,7 @@ public class CategoryTestCase {
 			Boolean status=categoryDAO.delete(category);
 			Assert.assertEquals("delete category test case",true,status);
 			}*/
-		@Test
+		/*@Test
 		public void updateCategoryTestCase()
 		{
 			category.setId("134");
@@ -57,7 +57,7 @@ public class CategoryTestCase {
 			category.setName("aks");
 			Boolean status=categoryDAO.update(category);
 			Assert.assertEquals("update category test case",true,status);
-			}
+			}*/
 
 
 
