@@ -2,16 +2,19 @@ package com.niit.shoppingcart.dao;
 
 import java.util.List;
 
+
 import com.niit.shoppingcart.model.Product;
+import com.niit.shoppingcart.model.Supplier;
 
 public interface ProductDAO {
-public boolean save(Product product);
-	
-	public boolean update(Product product);
-	
-	public boolean delete(Product product);
-	
-	public Product get(String id); 
-	
-	public List<Product> list();
+
+public void addProduct(Product p);
+
+public void updateProduct(Product p);
+
+public List<Product> listProduct();
+
+public Product getProductById(int id);
+
+public void removeProduct(int id);
 }

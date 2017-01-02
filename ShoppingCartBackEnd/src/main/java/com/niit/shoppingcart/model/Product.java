@@ -1,36 +1,60 @@
 package com.niit.shoppingcart.model;
 
-import org.springframework.stereotype.Component;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+import javax.validation.constraints.Size;
 
+import org.springframework.stereotype.Component;
+import org.springframework.web.multipart.MultipartFile;
+@Entity
+@Table
 @Component
 public class Product {
-private String id;
-private String name;
-private String price;
-private String description;
-public String getId() {
-	return id;
-}
-public void setId(String id) {
-	this.id = id;
-}
-public String getName() {
-	return name;
-}
-public void setName(String name) {
-	this.name = name;
-}
-public String getPrice() {
-	return price;
-}
-public void setPrice(String price) {
-	this.price = price;
-}
-public String getDescription() {
-	return description;
-}
-public void setDescription(String description) {
-	this.description = description;
-}
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int id;
+	
+	@Column
+	@Size(min=2,max=10,message="Name has to be between 2 to 10 characters")
+	private String name;
+	
+	@Column
+	private int price;
+	
+	
+	@Transient
+	public MultipartFile image;
+	
+	
+	public int getId() {
+		return id;
+	}
+	public MultipartFile getImage() {
+		return image;
+	}
+	public void setImage(MultipartFile image) {
+		this.image = image;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+		
 
 }
