@@ -76,14 +76,14 @@ public class ProductController {
 		
 	}
 
-		@RequestMapping("/removeid3/{id}")
+		@RequestMapping("/removeid1/{id}")
 		public String removeProduct(@PathVariable("id") int id)
 		{
 			productDAO.removeProduct(id);
 			return "redirect:/addproduct";
 		}
 		
-		@RequestMapping("/editid3/{id}")
+		@RequestMapping("/editid1/{id}")
 		public String editProduct(@PathVariable("id") int id, Model model)
 		{
 			model.addAttribute("product", productDAO.getProductById(id));

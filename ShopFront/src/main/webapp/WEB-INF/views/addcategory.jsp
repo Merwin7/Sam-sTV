@@ -14,11 +14,15 @@
 	</style>
 </head>
 <body>
-
-
-<h1>
+<jsp:include page="admin.jsp"></jsp:include>
+<div class="container fluid" style="background-color:blue;color:black;height:90px;">
+<center><h1>
+	ADMIN PAGE
+</h1></center>
+</div>
+<h2>
 	Add a Category
-</h1>
+</h2>
 
 <c:url var="addAction" value="/category/add" ></c:url>
 
@@ -96,11 +100,12 @@
 			<td>${category.id}</td>
 			<td>${category.name}</td>
 			<td>${category.description}</td>
-			<td><a href="<c:url value='/editid1/${category.id}' />" >Edit</a></td>
-			<td><a href="<c:url value='/removeid1/${category.id}' />" >Delete</a></td>
+			<td><a href="<c:url value='/editid/${category.id}' />" >Edit</a></td>
+			<td><a href="<c:url value='/removeid/${category.id}' />" >Delete</a></td>
 		</tr>
 	</c:forEach>
 	</table>
 </c:if>
+<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

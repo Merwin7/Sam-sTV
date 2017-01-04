@@ -16,6 +16,12 @@
 <body>
 
 <jsp:include page="admin.jsp"></jsp:include>
+<div class="container fluid" style="background-color:blue;color:black;height:90px;">
+<center><h1>
+	ADMIN PAGE
+</h1></center>
+</div>
+
 <h1>
 	Add a Product
 </h1>
@@ -65,7 +71,18 @@
 		</td>
 	</tr>
 	
-		
+	<tr>
+		<td>
+			<form:label path="description">
+				<spring:message text="Description"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="description" />
+			<form:errors path="description"/>
+		</td>
+	</tr>
+	
 	<tr>
 		<td>
 			<form:label path="image">
@@ -74,7 +91,7 @@
 		</td>
 		<td>
 			<form:input type="file" path="image" />
-			<form:errors path="price"/>
+			<form:errors path="description"/>
 		</td>
 	</tr>
 	
@@ -102,7 +119,8 @@
 		<th width="80">Product ID</th>
 		<th width="120">Product Name</th>
 		<th width="120">Product Price</th>
-				<th width="60">Edit</th>
+		<th width="120">Product description</th>
+		<th width="60">Edit</th>
 		<th width="60">Delete</th>
 	</tr>
 	<c:forEach items="${listProduct}" var="product">
@@ -110,11 +128,13 @@
 			<td>${product.id}</td>
 			<td>${product.name}</td>
 			<td>${product.price}</td>
-						<td><a href="<c:url value='/editid3/${product.id}' />" >Edit</a></td>
-			<td><a href="<c:url value='/removeid3/${product.id}' />" >Delete</a></td>
+			<td>${product.description}</td>
+			<td><a href="<c:url value='/editid1/${product.id}' />" >Edit</a></td>
+			<td><a href="<c:url value='/removeid1/${product.id}' />" >Delete</a></td>
 		</tr>
 	</c:forEach>
 	</table>
 </c:if>
+<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

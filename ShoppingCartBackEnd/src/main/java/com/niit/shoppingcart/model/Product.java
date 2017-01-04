@@ -24,8 +24,11 @@ public class Product {
 	private String name;
 	
 	@Column
-	private int price;
+	private double price;
 	
+	@Column
+	@Size(min=2,max=10,message="Name has to be between 2 to 10 characters")
+	private String description;
 	
 	@Transient
 	public MultipartFile image;
@@ -49,12 +52,16 @@ public class Product {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getPrice() {
+	public double getPrice() {
 		return price;
 	}
-	public void setPrice(int price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
-		
-
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
 }

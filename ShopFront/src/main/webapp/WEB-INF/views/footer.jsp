@@ -94,9 +94,9 @@
         	<div class="col-md-2 footer-social animated fadeInDown">
             	<h4>Follow Us</h4>
             	<ul>
-                	<li><a href="#">Facebook</a></li>
-                	<li><a href="#">Twitter</a></li>
-                	<li><a href="#">Instagram</a></li>
+                	<li><a href="https://www.facebook.com/">Facebook</a></li>
+                	<li><a href="https://www.twitter.com/">Twitter</a></li>
+                	<li><a href="https://www.instagram.com/">Instagram</a></li>
                 	<li><a href="#">RSS</a></li>
                 </ul>
             </div>

@@ -14,8 +14,12 @@
 	</style>
 </head>
 <body>
-
-
+<jsp:include page="admin.jsp"></jsp:include>
+<div class="container fluid" style="background-color:blue;color:black;height:90px;">
+<center><h1>
+	ADMIN PAGE
+</h1></center>
+</div>
 <h1>
 	Add a Supplier
 </h1>
@@ -102,5 +106,6 @@
 	</c:forEach>
 	</table>
 </c:if>
+<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>
