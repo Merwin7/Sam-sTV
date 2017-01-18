@@ -41,10 +41,10 @@ align:center;
 								<label>$749.99</label></h3>
 							</div>
 						</div>
-						<p>32GB, 64Bit, 1080HD, 4.7 inches, iOS 8</p>
+						<p>108cm (43) Full HD LED TV K5002 Series 5</p>
 						<div class="row">
 							<div class="col-md-6">
-								<a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-thumbs-up"></span>Add To Cart</a> 
+								<a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-shopping-cart"></span>Add To Cart</a> 
 							</div>
 							<div class="col-md-6">
 								<a href="#" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Buy</a></div>

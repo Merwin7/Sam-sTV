@@ -12,13 +12,13 @@
 </c:if>
 ${ErrorMessage}
 <c:if test="${not empty ErrorMessage}">
-<jsp:include page="login.jsp"></jsp:include><br>
+<jsp:include page="Login.jsp"></jsp:include><br>
 </c:if>
 <c:if test="${userClickeAdmin}">
 <jsp:include page="admin.jsp"></jsp:include><br>
 </c:if>
 <c:if test="${userClickedLogin}">
-<jsp:include page="login.jsp"></jsp:include><br>
+<jsp:include page="Login.jsp"></jsp:include><br>
 </c:if>
 <c:if test="${userClickedRegister}">
 <jsp:include page="register.jsp"></jsp:include>
@@ -28,8 +28,8 @@ ${ErrorMessage}
 </c:if>
 <c:out value="${SuccessMessage}"/>
 ${registerMessage}
-<c:if test="${home }">
-<jsp:include page="home.jsp"></jsp:include></c:if>
+<jsp:include page="home.jsp"></jsp:include>
+
 <jsp:include page="footer.jsp"></jsp:include>
 
 </body>

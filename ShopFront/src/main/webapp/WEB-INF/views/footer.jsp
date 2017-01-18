@@ -87,7 +87,7 @@
                         <li><a href="aboutus">About Us</a></li>
                         <li><a href="contactus">Contactus</a></li>
                         <li><a href="terms">Terms & Condition</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        
                     </ul>
                 </div>
             </div>
@@ -97,7 +97,7 @@
                 	<li><a href="https://www.facebook.com/">Facebook</a></li>
                 	<li><a href="https://www.twitter.com/">Twitter</a></li>
                 	<li><a href="https://www.instagram.com/">Instagram</a></li>
-                	<li><a href="#">RSS</a></li>
+                	
                 </ul>
             </div>
         	<div class="col-md-3 footer-ns animated fadeInRight">

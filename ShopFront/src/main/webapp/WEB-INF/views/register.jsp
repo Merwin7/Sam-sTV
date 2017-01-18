@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -10,57 +13,82 @@ body { padding-top:1px; }
 </head>
 <body>
 <jsp:include page="header.jsp"></jsp:include>
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
-            <legend><a href="http://www.jquery2dotnet.com"><i class="glyphicon glyphicon-globe"></i></a> Sign up!</legend>
-            <form action="#" method="post" class="form" role="form">
-            <div class="row">
-                <div class="col-xs-6 col-md-6">
-                    <input class="form-control" name="firstname" placeholder="First Name" type="text"
-                        required autofocus />
-                </div>
-                <div class="col-xs-6 col-md-6">
-                    <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
-                </div>
-            </div>
-            <input class="form-control" name="youremail" placeholder="Your Email" type="email" />
-            <input class="form-control" name="reenteremail" placeholder="Re-enter Email" type="email" />
-            <input class="form-control" name="password" placeholder="New Password" type="password" />
-            <label for="">
-                Birth Date</label>
-            <div class="row">
-                <div class="col-xs-4 col-md-4">
-                    <select class="form-control">
-                        <option value="Month">Month</option>
-                    </select>
-                </div>
-                <div class="col-xs-4 col-md-4">
-                    <select class="form-control">
-                        <option value="Day">Day</option>
-                    </select>
-                </div>
-                <div class="col-xs-4 col-md-4">
-                    <select class="form-control">
-                        <option value="Year">Year</option>
-                    </select>
-                </div>
-            </div>
-            <label class="radio-inline">
-                <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
-                Male
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
-                Female
-            </label>
-            <br />
-<br />            
-           <<button class="btn btn-lg btn-primary btn-block" type="submit">
-                Sign up</button>
-            </form>
-        </div>
+
+<center><h2 style="color:crimson">Registration portal</h2></center>
+	  
+		<div class="container">
+		
+		<!-- class="form-horizontal" role="form"  class="form" commandName="UserDetails" name="form1" onsubmit="return a()"  -->
+		<c:url var="addAction" value="/Success">
+		</c:url>
+	 
+		<form:form method="post" action="Success" commandName="userDetails" class="form-horizontal">  
+<div class="form-group">
+    <label class="control-label col-sm-2"><spring:message text="NAME:"/></label>
+    <div class="col-sm-5">
+    
+					<input type="text" class="form-control" name="name" pattern="[A-Z][a-z]{1,15}" required="true"/>
+     
     </div>
-</div>
+  </div><br>
+  <c:forEach items="${flowRequestContext.messageContext.getMessagesBySource('name')}" var="err">
+					  <div><span>${err.text}</span></div>
+					</c:forEach>
+  <div class="form-group">
+    <label class="control-label col-sm-2"><spring:message text="USERNAME:"/></label>
+    <div class="col-sm-5"> 
+      <input type="text" class="form-control" name="username" pattern="[A-Z][a-z]{1,15}" required="true"/>
+    </div>
+  </div><br>
+  <c:forEach items="${flowRequestContext.messageContext.getMessagesBySource('name')}" var="err">
+					  <div><span>${err.text}</span></div>
+					</c:forEach>
+					 
+  <div class="form-group">
+    <label class="control-label col-sm-2"><spring:message text="EMAIL:"/></label>
+    <div class="col-sm-5"> 
+      <input type="text" class="form-control" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="true">
+    </div>
+  </div><br>
+  <c:forEach items="${flowRequestContext.messageContext.getMessagesBySource('email')}" var="err">
+					  <div><span>${err.text}</span></div>
+					</c:forEach>
+					<div class="form-group">
+    <label class="control-label col-sm-2"><spring:message text="ADDRESS:"/></label>
+    <div class="col-sm-5"> 
+      <input type="text" class="form-control" name="address" required="true">
+    </div>
+  </div><br>
+  <c:forEach items="${flowRequestContext.messageContext.getMessagesBySource('email')}" var="err">
+					  <div><span>${err.text}</span></div>
+					</c:forEach>
+ <div class="form-group">
+    <label class="control-label col-sm-2"><spring:message text="PASSWORD:"/></label>
+    <div class="col-sm-5"> 
+      <input type="password" class="form-control" name="password" pattern=".{6,8}" required="true" title="password should contain 6 to 8 characters">
+    </div>
+  </div><br>
+  <c:forEach items="${flowRequestContext.messageContext.getMessagesBySource('password')}" var="err">
+					  <div><span>${err.text}</span></div>
+					</c:forEach>
+  <div class="form-group">
+    <label  class="control-label col-sm-2"><spring:message text="PHONE:"/></label>
+    <div class="col-sm-5"> 
+      <input type="number" class="form-control" name="Phone" pattern="[9|7|8][0-9]{9}" required="true" title="Please enter valid phone number">
+    </div>
+  </div><br> 
+  <c:forEach items="${flowRequestContext.messageContext.getMessagesBySource('Phone')}" var="err">
+					  <div><span>${err.text}</span></div>
+					</c:forEach>
+  <center><button type="submit" class="btn btn-success">Register</button></center>
+  </form:form>
+		
+	</div>
+	<%@ include file="footer.jsp" %>
+</body>
+</html>
+				<!-- <div
+				style="width: 200px; height: 540px; padding: 10px; border: 3px solid black"> -->
+				
 </body>
 </html>

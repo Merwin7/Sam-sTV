@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Mizpah musings</title>
+<title>SAM'S TELEVISION</title>
 <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {

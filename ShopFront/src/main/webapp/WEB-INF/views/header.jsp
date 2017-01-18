@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
-  <title>Bootstrap Case</title>
+  <title>Sam's TV</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -31,14 +31,15 @@ body  {
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">SAM'S TELEVISION</a>
+      <a  href="home"class = "pull-left"><img src="C:\Users\minni_000\Desktop\Sams-Club-Logo-300x300.jpg" width ="70" height="50" ></a>
+    <div class="navbar-brand">SAM'S TELEVISION</div>
     </div>
         <ul class="nav navbar-nav">
       <li><a href="home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
       <li><a href="aboutus">About Us</a></li>
       <li><a href="contactus">Contact Us</a></li>
      
-        <li class="dropdown"><a data-target="#" href="page.html" data-toggle="dropdown" class="dropdown-toggle">Products <b class="caret"></b></a>
+        <li class="dropdown"><a data-target="#" href="page.html" data-toggle="dropdown" class="dropdown-toggle">Category <b class="caret"></b></a>
         <ul class="dropdown-menu">
             <li><a href="4k">4K ULTRA</a></li>
             <li><a href="3d">3D</a></li>
@@ -48,14 +49,16 @@ body  {
         </ul>     
                    
         <ul class="nav navbar-nav navbar-right">
-    <c:if test="${empty SuccessMessage}">
+    <c:if test="${empty loginsuccess}">
       <li><a href="register">Signup <span class="glyphicon glyphicon-user"></span></a></li>
       <li><a href="login">Login <span class="glyphicon glyphicon-log-in"></span></a></li>
       </c:if>
-      <c:if test="${not empty SuccessMessage}">
-       <li><a href="#">My Cart<span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-       <li><a href="login">Log out<span class="glyphicon glyphicon-log-out"></span></a></li>
-       </c:if>
+     <c:if test="${not empty loginsuccess}">
+					<li><a href="cart">My Cart<span
+							class="glyphicon glyphicon-shopping-cart"></span></a></li>
+					<li><a href="logout">Logout<span
+							class="glyphicon glyphicon-log-out"></span></a></li>
+				</c:if>
        </ul>
          </div>
          </nav>
